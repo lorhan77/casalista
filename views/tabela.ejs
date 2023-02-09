@@ -4,6 +4,7 @@
             <th>Presente</th>
             <th>Valor</th>
             <th>Ação</th>
+            <th>Apagar</th>
         </tr>
         </thead>
         
@@ -12,7 +13,8 @@
               <tr>
                 <td><%- presente.nome %></td>
                 <td><%- presente.valor %></td>
-                <td><% if(!presente.comprado) { %> <a href="/comprar/<%- index %>">Comprar</a> <% } %></td>                
+                <td><% if(!presente.comprado) { %> <a href="/comprar/<%- index %>">Comprar</a> <% } %></td> 
+                <td><% if(!presente.apagado) { %> <a href="/apagar/<%- index %>">Apagar</a> <% } %></td>                    
               </tr>
             <% }) %>
         </tbody>
