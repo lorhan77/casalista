@@ -20,7 +20,7 @@ module.exports = function (app) {
                     const presentes = await db.execSQLQuery('SELECT * FROM presentes', res);                   
                 })();
                 },
-                incluirnobanco: function (req, res) {
+        incluirnobanco: function (req, res) {
                     (async () => {
                         const db = require("../db");
                         console.log('conectou pela API');                

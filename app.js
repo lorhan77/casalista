@@ -11,7 +11,7 @@ var express = require("express"),
     ejs.close = '}}';
 */
 
-// Sobe o servidor HTTP na posta 3000
+// Sobe o servidor HTTP na porta 3000
 app.listen(3000, function () {
       console.log("Servidor está no ar.");
 });
